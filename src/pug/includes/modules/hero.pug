@@ -1,0 +1,76 @@
+include ./../../utils/mixins.pug
+
+.hero
+    .hero-scroll
+            .hero-scroll-block
+                img(src="./assets/img/scroll.svg", alt="scroll")
+    +grid(red)
+    .hero-grid
+    .container
+        .hero-header
+            .row
+                .col-lg-3.hero-logo
+                    a(href="#")
+                        img(src="assets/img/logo.svg", alt="big-city")
+                .col-lg-3.hero-marker
+                    .hero-marker-img
+                        img(src="assets/img/marker.svg", alt="marker")
+                    .hero-marker-text 
+                        a(href="#")
+                            p 
+                                |г. Гродно
+                                br 
+                                |Гродненская область
+                .col-lg-6
+                    .row
+                        .col-lg-5.hero-phone
+                            .hero-phone-img
+                                img(src="assets/img/phone.svg", alt="marker")
+                            .hero-phone-text
+                                .hero-phone-text-item 
+                                    a(href="tel:+375298444405") 
+                                        p + 375 29 844-44-05
+                                .hero-phone-text-item
+                                    a(href="tel:+375448444405") 
+                                        p + 375 44 844-44-05
+                        .col-lg-7.hero-button
+                            a(href="#")
+                                .hero-button-blur
+                                .hero-button-button Заказать звонок
+            .hamburger
+                .hamburger-block
+        .hero-content
+            .row
+                .col-lg-6
+                    .hero-content-text
+                        .hero-content-text-title
+                            h1 Изготовление мебели на заказ
+                        .hero-content-text-button
+                            .hero-content-text-button-blur
+                            button Заказать
+                .col-lg-6
+                    .hero-content-slider
+                        .hero-content-slider-item
+                            img(src="./assets/img/slider_1.jpg", alt="")
+                        .hero-content-slider-item
+                            img(src="./assets/img/slider_2.jpg", alt="")
+                        .hero-content-slider-item
+                            img(src="./assets/img/slider_3.jpg", alt="")
+        .hero-pods
+            .row
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Собственное производство
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Бесплатная установка и доставка
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Рассрочка до 6 месяцев
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Более 5 лет на рынке    

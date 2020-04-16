@@ -1,0 +1,20 @@
+mixin grid(color)
+  .grid(class=color)
+    .container
+      .row
+        .col-3
+          .grid-border
+        .col-3
+          .grid-border
+        .col-3
+          .grid-border
+        .col-3
+          .grid-border.last
+      .grid-counter
+        .grid-counter-top
+          img(src="./assets/img/counter_top.svg", alt="top")
+        .grid-counter-center 
+          span.grid-counter-center-first  01 
+          span.grid-counter-center-second / 07
+        .grid-counter-bottom 
+          img(src="./assets/img/counter_bot.svg", alt="top")

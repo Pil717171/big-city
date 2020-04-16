@@ -1,0 +1,33 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "modules/hero";
+@import "modules/grid";
+@import "modules/menu";
+
+p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #EBE6E2;
+}
+
+h1 {
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #C69C6D;
+}
+
+a {
+    text-decoration: none;
+    color: #EBE6E2;;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
