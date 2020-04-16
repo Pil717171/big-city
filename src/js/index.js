@@ -1,6 +1,7 @@
 
 function initSlider() {
     $(document).ready(function(){
+        //hero block slider
         $('.hero-content-slider').slick({
             arrows: true,
             slidesToShow: 2,
@@ -22,7 +23,16 @@ function initSlider() {
             } else {
                 document.querySelector('.hero-content-slider-buttons-next').classList.add('active')
             }
-          });
+        });
+        //offer block slider
+        $('.offer-slider').slick({
+            arrows: false,
+            slidesToShow: 1,
+            speed: 5000,
+            autoplay: true,
+            fade: true
+            }
+        );
     });
 }
 

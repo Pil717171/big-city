@@ -1,0 +1,18 @@
+include ./../../utils/mixins.pug
+
+section.offer
+    +grid(red)
+    .container
+        .offer-wrapper 
+            .row
+                .col-lg-6
+                    .offer-slider
+                        .offer-slider-item
+                            img(src="./assets/img/offer_slider_1.jpg", alt="")
+                        .offer-slider-item
+                            img(src="./assets/img/offer_slider_2.jpg", alt="")
+                        .offer-slider-item
+                            img(src="./assets/img/offer_slider_3.jpg", alt="")
+                .col-lg-5.offset-lg-1
+            .hamburger
+                .hamburger-block

@@ -1,0 +1,24 @@
+.offer {
+    min-height: 100vh;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+    &-wrapper {
+        position: relative;
+
+    }
+    &-slider {
+        transform: translate(-50%, 30%);
+        &-item {
+
+        }
+    }
+    & .slick {
+        &-track {
+            display: flex;
+        }
+        &-list {
+            overflow: hidden;
+        }
+    }
+}
