@@ -7,11 +7,21 @@
 @import "modules/grid";
 @import "modules/menu";
 @import "modules/offer.scss";
+@import "modules/order";
 
 p {
     font-family: Roboto;
     font-weight: 400;
     color: #EBE6E2;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    &.white-text {
+        color: #D8D8D8;
+    }
 }
 
 h1 {
@@ -21,6 +31,15 @@ h1 {
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
+    color: #C69C6D;
+}
+
+h2 {
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
     color: #C69C6D;
 }
 

@@ -17,6 +17,11 @@
         }
 
     }
+    &.grid-order {
+        .grid-counter-center {
+            color: rgba(235, 230, 226, 0.8);
+        }
+    }
     &-border {
         min-height: 100vh;
         border-left: 1px solid rgba(198, 156, 109, 0.1);
