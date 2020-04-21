@@ -92,6 +92,7 @@
                 }
             } 
             &-button {
+                position: relative;
                 & button {
                     background: linear-gradient(180deg, #C69C6D 0%, #D39F64 100%);
                     border-radius: 32px;
@@ -111,8 +112,16 @@
                     letter-spacing: -0.8px;
                     color: #333333;
                     margin-left: 96px;
+                    cursor: pointer;    
+                    position: relative;
+                    z-index: 2;
+                    outline: none;
                 }
-                &-blur {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     background: linear-gradient(180deg, rgba(198, 156, 109, 0.5) 0%, rgba(211, 159, 100, 0.5) 100%);
                     filter: blur(50px);
                     border-radius: 32px;
@@ -120,6 +129,14 @@
                     width: 159px;
                     height: 37px;
                     position: absolute;
+                    opacity: 0.5;
+                    transition: 0.3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                &-blur {
+                    
                 }
 
             }
