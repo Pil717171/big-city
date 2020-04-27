@@ -1,5 +1,5 @@
 
-function initSlider() {
+function initMainSlider() {
     $(document).ready(function(){
         //hero block slider
         $('.hero-content-slider').slick({
@@ -7,7 +7,7 @@ function initSlider() {
             slidesToShow: 2,
             prevArrow: document.querySelector('.hero-content-slider-buttons-prev'),
             nextArrow: document.querySelector('.hero-content-slider-buttons-next'),
-            infinite: false
+            infinite: false,
             }
         );
         $('.hero-content-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -30,11 +30,28 @@ function initSlider() {
             slidesToShow: 1,
             speed: 5000,
             autoplay: true,
-            fade: true
+            fade: true,
             }
         );
     });
 }
 
-initSlider()
+function initExampleSlider () {
+    $('.example-slider').slick({
+        arrows: true,
+        slidesToShow: 3,
+        infinite: false,
+        centerMode: true,
+        prevArrow: document.querySelector('.example-slider-buttons-prev'),
+        nextArrow: document.querySelector('.example-slider-buttons-next'),
+        }
+    );
+    $('.example-slider').slick('slickGoTo', 2,  true);
+
+}
+
+
+
+initExampleSlider()
+initMainSlider()
 
