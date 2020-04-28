@@ -10,6 +10,8 @@
 @import "modules/order";
 @import "modules/steps";
 @import "modules/example";
+@import "modules/comment.scss";
+@import "modules/contact.scss";
 
 p {
     font-family: Roboto;
@@ -60,5 +62,17 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+body {
+    // height: 100vh;
+    overflow: hidden;
+}
+
+.body-wrapper {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
